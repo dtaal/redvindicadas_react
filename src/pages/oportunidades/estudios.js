@@ -35,7 +35,7 @@ let cursos = [
             "img":"https://periodismopublico.com/wp-content/uploads/2019/06/Sena-.jpg",
             "inst":"SENA",
             "fecha":"Abierto",
-            "acerca":"Introduccion a sistemas automatizados, actuadores, lenguajes de programacion, aplicaciones de automatizacion",
+            "acerca":"Introducción a sistemas automatizados, actuadores, lenguajes de programación, aplicaciones de automatización",
             "link":"http://oferta.senasofiaplus.edu.co/sofia-oferta/detalle-oferta.html?fm=0&fc=Mt--G8-sGqg",
         },
         {
@@ -44,7 +44,7 @@ let cursos = [
             "img":"https://www.sena.edu.co/es-co/Noticias/NoticiasImg/IMAGEN_62_ANOS_21junio.jpg",
             "inst":"SENA",
             "fecha":"Abierto",
-            "acerca":"Globalización, tecnología, sociedad y tecnologias de la información y la comunicación",
+            "acerca":"Globalización, tecnología, sociedad y tecnologías de la información y la comunicación",
             "link":"http://oferta.senasofiaplus.edu.co/sofia-oferta/detalle-oferta.html?fm=0&fc=INtLob8-kIE",
         },
         {

@@ -91,12 +91,12 @@ html {
     width: 100%;
     padding: 2rem;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 /* HOVER ESTUDIOS */
 .hover-estudios {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,9 +108,15 @@ html {
     background-color: #c75c7e33;
     box-shadow: 10px 15px #A12161;
     margin-top: 30px;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
+.hover-estudios h2, h3 {
+    padding: 15px;
+}
+.hover-estudios a {
+    padding: 20px;
+}
 .container figure {
     width: 100%;
     height: 100%;
