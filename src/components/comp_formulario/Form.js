@@ -1,5 +1,10 @@
 import "./Form.css"
+import { useState } from 'react';
 function Formulario(){
+    const [ isOpenForm, setIsOpenForm ] =useState(false);
+    const closeForm=()=>{
+        setIsOpenForm (false);
+    }
     return(
         <main className="body-form">
             <h1>Llena este formulario y te contactamos</h1>
@@ -7,7 +12,7 @@ function Formulario(){
             <label>Nombre</label>
             <input 
             name="nombre"
-            placeholder="colectivo, fundación o colegio"
+            placeholder="Colectivo, Fundación o Colegio"
             ></input>
             <label>Representante</label>
             <input 
@@ -30,9 +35,11 @@ function Formulario(){
             placeholder="Déjanos tu mensaje"
             ></input>
 			<label className="check">
-				Recuerda que al enviar el formulario aceptas los Terminos y Condiciones
+				Recuerda que al enviar el formulario aceptas los Términos y Condiciones.
 			</label>
             <button type="submit">Enviar</button>
+            <div className="cerrar" onClick={closeForm}><button >Cerrar</button>{isOpenForm && <Formulario />}</div>
+            
         </form>
         </main>
     );
