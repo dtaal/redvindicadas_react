@@ -1,0 +1,25 @@
+.contents-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-sub{
+    color: #010101;
+    text-decoration: none;
+}
+
+.cambios, .EIS, .Prevencion{
+    min-height: 123px;
+    min-width: 100px;
+}
+
+.contents-buttons img {
+    min-height: 89px;
+    min-width: 89px;
+    max-height: 90px;
+    max-width: 90px;
+    height: 100%;
+    width: 100%;
+}

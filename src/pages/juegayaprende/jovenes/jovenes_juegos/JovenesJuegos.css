@@ -1,0 +1,187 @@
+/* Diseño de jovenes-juegos */
+
+.section-games{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-game{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+
+.box-division{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: .5rem;
+}
+
+.games-text{
+    margin: .5rem;
+    padding: .2rem;
+}
+
+.games-text h2{
+    text-align: center;
+    margin: .5rem;
+}
+
+.games-text p{
+    margin: .5rem;
+    text-align: center;
+}
+
+.games-image{
+    align-items: center;
+    display: flex;
+    padding: .2rem;
+}
+
+.games-image img{
+    border-radius: 100%;
+    max-width: 150px;
+}
+
+.games-buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+}
+
+.juego-articulo{
+    background-color: #A12161;
+    border-radius: 10px;
+    color: #FFF8F8;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.juego-descarga{
+    background-color: #C75C7E;
+    border-radius: 10px;
+    color: #FFF8F8;
+    margin-left: .5rem;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.box-second-game{
+    background-color: #440042;
+    color: #FFF8F8;
+}
+
+.second-game{
+    flex-direction: column;
+    text-align: center;
+}
+
+.second-game h2{
+    text-align: center;
+}
+
+.second-game p{
+    text-align: center;
+}
+
+.barnav-recursosyjuegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.ds-barnav-interna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding:0 10px;
+    /*border: 2px solid;*/
+}
+
+.button-adult, .desactive:hover{
+    background: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+.button-adult:hover, .desactive{
+    color: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+.ds-img-menu{
+    margin: 1rem;
+    max-height: 100px;
+    height: 60%;
+    padding-bottom: 5px;
+}
+
+.ds-imglinea-nav{
+    margin: 0 10px;
+    height:70px;
+}
+
+/*Resolución de tablet*/
+@media screen and (min-width: 768px) {
+
+    .box-game{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .games-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .games-image img{
+        max-width: 250px;
+    }
+
+    .box-division{
+        flex-direction: row;
+    }
+
+    .games-buttons a{
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .second-game{
+        flex-direction: row-reverse;
+    }
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+
+    .box-game{
+        align-items: center;
+        width: 100%;
+    }
+
+    .box-division{
+        padding: 0 5rem;
+    }
+}

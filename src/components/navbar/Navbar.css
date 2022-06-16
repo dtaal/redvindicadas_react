@@ -1,0 +1,134 @@
+ /* Diseño de Nav */
+ 
+ nav{
+	background: rgb(53,1,88);
+    background: linear-gradient(90deg, rgba(53,1,88,1) 0%, rgba(106,1,128,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    position: initial;
+}
+
+nav li ul{
+    background: linear-gradient(90deg, rgba(53,1,88,1) 0%, rgba(106,1,128,1) 100%);
+    display: none;
+    min-width: 140px;
+    padding: .5rem;
+    position: absolute;
+}
+
+nav li:hover > ul{
+    display: block;
+}
+
+li{
+    padding: .2rem;
+}
+
+#check-menu{
+    display: none;
+}
+
+#check-menu:checked ~ .nav-header{
+    animation: move 1s 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes move {
+    0%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, .1);
+        transform: translateX(5px);
+    }
+
+    70%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+        transform: translateX(10px);
+    }
+
+    100%{
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+        transform: translateX(5px);
+    }
+}
+
+.button-menu{
+    color: white;
+    cursor: pointer;
+}
+
+.nav-header{
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    font-weight: 600;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    width: 100vw;
+}
+
+.nav-header li{
+    margin: .3rem;
+}
+
+.nav-header a{
+    color: #FFF8F8;
+    text-decoration: none;
+	padding: .5rem;
+}
+
+.nav-header li:hover{
+    text-decoration: underline;
+}
+
+.redes{
+    cursor: pointer;
+}
+
+.redes-enlaces li{
+    list-style: none;
+}
+
+.redes a:hover{
+    background-color: #A12161;
+    text-decoration: none;
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+    body, header, nav, footer {
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Diseño de nav */
+
+    nav{
+        position: initial;
+        width: 100%;
+    }
+
+    .button-menu{
+        display: none;
+    }
+
+    .nav-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: .2rem; 
+        width: 100%;       
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    #check-menu:checked ~ .nav-header{
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+    }
+}

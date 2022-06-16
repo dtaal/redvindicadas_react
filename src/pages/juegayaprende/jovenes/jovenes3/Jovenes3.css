@@ -1,0 +1,333 @@
+/* Diseño de jovenes3 */
+
+.content-prevention h1 {
+    background-color: var(--morado-osc);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+}
+
+.content-prevention p {
+    margin: 1rem;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.main-gradient-prevention{
+    margin:5px;
+    background-color:var(--fondo);
+    border-radius: 10px;
+    padding:15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-gradient-prevention p{
+    margin: 1rem .2rem;
+    font-size: 16px;
+}
+
+.main-gradient-prevention a{
+    color: var(--morado-oscuro);
+    text-decoration: none;
+}
+
+.box-prevention{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+}
+
+.prevention-women, .prevention-kids, .prevention-young{
+    align-items: center;
+    max-width: 130px;
+    min-height: 150px;
+    margin:5px;
+    background-color:var(--fondo);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald';
+    justify-content: center;
+}
+
+.prevention-women a, .prevention-kids a, .prevention-young a{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gradient-box{
+    padding:0.1px;
+    background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.gradient-box h3{
+    margin: 1rem;
+    text-align: center;
+}
+
+.gradient-box p{
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+}
+
+.prevention-women, .prevention-kids, .prevention-young{
+    font-size: 18px;
+}
+.button-see{
+    margin: 1rem;
+}
+
+.button-see a{
+    color: var(--fondo);
+}
+
+.boton-morado{
+    background-color: #440042;
+    border-radius: 10px;
+    color: white;
+    font-size:15px;
+    font-weight: bolder;
+    margin: 1rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.go-lines a{
+    color: #440042;
+    text-decoration: none;
+}
+
+.prevention-foot{
+    background-color: var(--morado-osc);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 20px;
+}
+
+.section-no-game {
+    background-color: var(--morado-osc);
+    margin-top: 2rem;
+}
+
+.section-no-game h2 {
+    background-color: var(--rosa-oscuro);
+    color: var(--fondo);
+    margin: 1rem 0;
+    padding: 1rem .5rem;
+    text-align: center;
+    text-shadow: 1px 2px 4px black;
+}
+
+.section-no-game p{
+    color: white;
+    margin: 1rem;
+    text-align: center;
+}
+
+.box-no-game{
+    min-height: 215px;
+    margin:5px;
+    background-color:var(--fondo);
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-no-game h3{
+    font-family: 'Oswald';
+}
+
+.box-no-game p{
+    color: black;
+    text-align: center;
+}
+
+.no-game-foot{
+    background-color: var(--rosa-oscuro);
+    max-height: 30px;
+    height: 100%;
+}
+
+.go {
+    padding: .5rem;
+    text-align: center;
+}
+
+.go a {
+    max-width: 1000px;
+}
+
+.go i{
+    color: #A12161;
+}
+
+.barnav-recursosyjuegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.ds-barnav-interna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding:0 10px;
+    /*border: 2px solid;*/
+}
+
+.button-adult, .desactive:hover{
+    background: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+.button-adult:hover, .desactive{
+    color: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+.ds-img-menu{
+    margin: 1rem;
+    max-height: 100px;
+    height: 60%;
+    padding-bottom: 5px;
+}
+
+.ds-imglinea-nav{
+    margin: 0 10px;
+    height:70px;
+}
+
+/*Resolución de tablet*/
+@media screen and (min-width: 768px) {
+
+    .gradient-box{
+        min-width: 200px;
+    }
+
+    .prevention-women, .prevention-kids, .prevention-young{
+        font-size: 20px;
+        min-width: 240px;
+        min-height: 200px;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .boxes-no-game{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .boton-morado{
+        font-size: 20px;
+    }
+
+    .gradient-box h3 {
+        font-size: 20px;
+    }
+
+    .gradient-box p {
+        font-size: 15px;
+    }
+
+    .section-no-game p{
+        margin: 2rem;
+    }
+
+    .ds-barnav-interna{
+        height: 140px;
+    }
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+
+    .main-gradient-prevention{
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .content-prevention h1{
+        font-size: 35px;
+    }
+
+    .content-prevention p{
+        font-size: 20px;
+    }
+
+    .box-prevention{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .prevention-women, .prevention-young{
+        min-width: 199px;
+        min-height: 199px;
+        max-width: 200px;
+        max-height: 200px;
+        padding: 0;
+    }
+
+    .prevention-kids{
+        min-width: 249px;
+        min-height: 249px;
+        max-width: 250px;
+        max-height: 250px;
+        padding: 0;
+    }
+
+    .boxes-no-game{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-no-game{
+        min-width: 180px;
+    }
+
+    .gradient-box h3 {
+        font-size: 30px;
+    }
+
+    .gradient-box p {
+        font-size: 25px;
+    }
+
+    .section-no-game p{
+        font-size: 18px;
+    }
+}

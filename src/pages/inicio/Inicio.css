@@ -1,0 +1,329 @@
+/* Diseño de home*/
+
+.home-banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../home/img/img-pantalla-inicial.svg);
+    height: 40vh;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-title {
+    font-family:"Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .presentacion{
+    background-image: url(./img/fondo-pres.png);
+    height: 100%;
+    margin: 1rem 0;
+    padding: .5rem .5rem;
+  }
+
+  .title-presen{
+    color: #FFB6B6;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .presentacion p{
+    color: white;
+    padding: 1rem;
+  }
+
+  .contacto-present{
+    background-color: #C75C7E;
+    border-radius: 5px;
+    margin: 1rem;
+    min-height: 50px;
+    text-align: center;
+  }
+
+  .contacto-present span{
+    font-weight: bold;
+  }
+
+  .dia-especial{
+    background-color: #440042;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .dia-especial h1{
+    color: white;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 104px;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-align: center;
+  }
+
+  .dia-especial p{
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hoy{
+    background-color: #A12161;
+    border-radius: 5px;
+    color: #FFF8F8;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .cuerpo-hoy{
+    background-color: var(--fondo);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .cuerpo-hoy h3{
+    color: #A12161;
+  }
+
+  .cuerpo-hoy p{
+    color: #030303
+  }
+
+  .cuerpo-hoy a{
+    color: #440042;
+    text-decoration: none;
+  }
+
+  .dia-especial img{
+    margin: 1rem 3rem;
+    max-width: 300px;
+  }
+
+  .vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    line-height: 5;
+  }
+
+  .info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .vector h2 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #030303;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
+
+  .card-border {
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(
+        180deg,
+        #ff7a00 0%,
+        #f67209 0.01%,
+        #a12161 81.35%
+      )
+      1;
+  }
+  
+  .home-cards h5 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    line-height: 3;
+  }
+  .go-home {
+    padding: .5rem;
+    text-align: center;  
+}
+    
+.go-home a{
+    max-width: 1000px;
+}
+
+.go-home i{
+    color: #f67209;
+    margin-top: .5rem;
+}
+
+  .logo-home-cards {
+    width: 150px;
+    height: 150px;
+  }
+
+  .pink-title {
+    color: #f2acb9;
+  }
+  .white-title {
+    color: white;
+  }
+
+  /*Resolución de tablet*/
+@media screen and (min-width: 768px) {
+    
+    /* Diseño de home*/
+    .home-title {
+        font-size: 3rem;
+      }
+
+    .presentacion{
+      padding: .5rem 1rem;
+    }
+
+    .title-presen{
+      font-size: 2rem;
+    }
+
+    .contacto-present{
+      margin: 1rem 4rem;
+    }
+
+    .nuevo-calendario{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .hoy-contenido{
+      display: flex;
+    }
+
+    .especial-hoy{
+      margin-left: 1rem;
+    }
+
+    .vector h2 {
+        font-size: 40px;
+      }
+
+    .cards-container {
+    flex-direction: row;
+    }
+
+    .home-cards {
+        margin-bottom: 3rem;
+        padding: .5rem 1rem;
+      }
+
+}
+
+/*Resolución de medias (equipos de escritorio)*/
+@media screen and (min-width: 1024px) {
+
+    /* Diseño de home*/
+    .home-title {
+        font-size: 4rem;
+      }
+
+    .presentacion{
+      margin: 1rem 0;
+      min-height: 420px;
+      padding-top: 2rem;
+    }
+
+    .title-presen{
+      font-size: 3rem;
+    }
+
+    .presentacion p{
+      font-size: 1.5rem;    
+      padding: 1rem 4rem;
+    }
+
+    .contacto-present{
+      margin: 1rem 8rem;
+    }
+
+    .dia-especial h1{
+      font-size: 40px;
+    }
+
+    .dia-especial p{
+      font-size: 20px;
+      margin: 0 6rem;
+    }
+
+    .especial-hoy{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+    }
+
+    .hoy{
+      font-size: 1.8rem;
+    }
+
+    .cuerpo-hoy h3{
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+    }
+
+    .cuerpo-hoy p{
+      margin: 0;
+      margin-bottom: 1.5rem;
+      padding: .5rem;
+    }
+
+    .cuerpo-hoy a{
+      font-size: 1.3rem;
+      
+    }
+
+    .dia-especial img{
+      max-width: 400px;
+    }
+
+    .home-cards {
+        margin-bottom: 3rem;
+        padding: .5rem 2.5rem;
+      }
+}
+
+/*Resolución macro*/
+@media screen and (min-width: 1200px) {
+    
+    main{
+        margin: 0 auto;
+    }
+}
