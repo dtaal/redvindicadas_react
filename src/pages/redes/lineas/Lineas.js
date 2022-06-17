@@ -1,12 +1,10 @@
 import Header from '../../../components/header/Header';
 import Navbar from '../../../components/navbar/Navbar';
 import Footer from '../../../components/footer/Footer';
-import violencia1 from '../../images_d/1-lineasemergencia.svg';
 import violencia2 from '../../images_d/2-lineasemergencia.svg';
 import violencia3 from '../../images_d/3-lineasemergencia.svg';
-import style from './Lineas.css';
+import './Lineas.css';
 import denunciar from '../../images_d/denunciar.svg';
-import Violencia from './LineasModal';
 import linea1 from '../../images_d/lineanya.svg';
 import linea2 from '../../images_d/linea purpura.svg';
 import linea3 from '../../images_d/icbf.svg';
@@ -14,19 +12,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMobileRetro} from '@fortawesome/free-solid-svg-icons'
 import {faPhoneSquare} from '@fortawesome/free-solid-svg-icons'
 import { getV } from '../../oportunidades/estudios';
-import { useState } from 'react';
+import violentometro from '../../images_d/violentometro.svg'
+import {faExclamationTriangle} from '@fortawesome/free-solid-svg-icons';
+
 
 function Lineas(){
     const vio = getV();
-    const [ isOpenModal, setIsOpenModal ] =useState(false);
-    const openModal=()=>{
-        setIsOpenModal (true);
-    }
     return(
        <div>
         <Header/>
         <Navbar/>
-        <Violencia/>
         <div className="d-titulolineas">
         <h1>Líneas de Emergencia</h1>
     </div>
@@ -65,18 +60,41 @@ function Lineas(){
     
     <div className="d-titulo">
         <h1>Infórmate: Tipos de Violencia</h1></div>
-        <div className='contenedor_violencia'>
+        <div className='violencia_container'>
         <div className='violencia'>{    
             vio.map(v=>(
                 <div key={v.id} className='v_contenedor'>
                 <h2>{v.violencia }</h2>
-                <button className='redflag' onClick={openModal}>Red flags</button> {isOpenModal && <Violencia />}
+                <ul>
+                    <li>{v.v1}</li>
+                    <li>{v.v2}</li>
+                    <li>{v.v3}</li>
+                    <li>{v.v4}</li>
+                </ul>
                 </div>
             ))
             }
             </div>
             </div>
-    <div className="d-denunciar">
+            <div className='titulo-violencia'><FontAwesomeIcon icon={faExclamationTriangle} />¡La violencia puede medirse, reconócela!</div>
+            <div className='violentometro'><img src={violentometro}></img>
+            <div className='violencias_v'>
+            <div className='violencia1'>
+                <p>Te golpea, te fuerza a tener relaciones sexuales (abuso sexual), te amenaza de muerte, con objetos o armas, te encierra o te aisla. </p> 
+            </div>
+            <div className='violencia2'>
+                <p>
+                    Te trata con con desprecio, te ofende verbalmente, te empuja, jalonea, te pellizca, araña, te golpea "jugando", te manosea, maneja y dispone de tus bienes, te prohibe planificar o tomar decisiones sobre tu propio cuerpo.
+                </p>
+            </div>
+            <div className='violencia3'>
+                <p>
+                    Hace bromas ofensivas o hirientes, te intimida, te humilla o ridiculiza, te culpabiliza, pone en duda tus capacidades y descalifica tus opiniones, destruye objetos, controla tus relaciones, te indica como vestirte...
+                </p>
+                </div>
+            </div>
+            </div>
+            <div className="d-denunciar">
         <h1>¿Dónde denunciar?</h1>
         <img src={denunciar} alt=""></img>
         

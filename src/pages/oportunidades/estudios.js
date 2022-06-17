@@ -139,9 +139,9 @@ let violencias = [
         "id": 3,
         "violencia":"Violencia Física",
         "v1":"No controla su enojo y golpea cosas a tu alrededor",
-        "v3":"Te pellizca, muerde, empuja, aprieta, etc, lastimándote.",
-        "v4":"Te agrede físicamente",
-        "v5":"Rompe tus objetos personales",
+        "v2":"Te pellizca, muerde, empuja, aprieta, etc, lastimándote.",
+        "v3":"Te agrede físicamente",
+        "v4":"Rompe tus objetos personales",
     },
     {
         "id": 4,

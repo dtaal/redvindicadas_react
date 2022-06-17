@@ -24,16 +24,29 @@
     margin-left: 19%;
     color: #FFFF;
 }
-.redflag {
-    background-color: #C75C7E;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
+.titulo-violencia {
+    text-align: center;
+    font-size: 24px;
     font-weight: 600;
-    margin-top: 10px;
-
+    background-color: #440042;
+    color: #FFF8F8;
 }
-
+.violentometro img {
+    width: 300px;
+    margin-left: 5%;
+}
+.violencias_v {
+    text-align: center;
+}
+.violencia1 {
+    background-color: #A12161;
+}
+.violencia2 {
+    background-color: #FF671B;
+}
+.violencia3 {
+    background-color:#FFCA00;
+}
 .d-titulolineas h1 {
     background-image: url(../../images_d/vectortitulo-lineasemer.svg);
     color: #FFFF;
@@ -155,14 +168,19 @@
     background-color: #440042;
     color: #FFF8F8;
 }
-
+.violencia {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 10px;
+}
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
-    .contenedor_violencia{
+    .violencia{
         display: flex;
-        flex-direction: row;
-
+        flex-direction: column;
+        margin-left: 20%;
     }
     .lugaresseguros p {
         margin: 5px 50px;
@@ -176,12 +194,22 @@
     .d-denunciar {
         margin-top: 8%;
     }
+    .violentometro img {
+        width: 400px;
+        margin-left: 25%;
+    }
 
 }
 
 @media (min-width: 1024px) {
-    .contenedor_violencia {
+    .violencia {
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 0%;
+    }
+    .v_contenedor {
+        margin-left: 0%;
     }
     .violencias {
         width: 800px;
@@ -223,6 +251,16 @@
     .lugaresseguros {
         margin-top: 20px;
     }
+    .violentometro {
+        display: flex;
+        flex-direction: row;
+    }
+    .violentometro img {
+        margin-left: 5%;
+    }
+    .violencias_v {
+        margin-top: 20%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -243,5 +281,18 @@
     .d-denunciar {
         margin-top: 0%;
     }
+    .violencias_v {
+        margin-top: 10%;
+    }
 
+}
+
+.violencia li {
+    list-style-image: url(../../images_d/redflag.svg);
+  max-width: 300px;
+      width: 100%;
+}
+
+.violencia h2 {
+    color: #440042;
 }
