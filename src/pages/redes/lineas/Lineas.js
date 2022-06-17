@@ -32,12 +32,12 @@ function Lineas(){
     <div className="lineasdeemergencia">
         <div>
             <img src={violencia2} alt=""></img>
-            <h2>Línea de Emergencia</h2>
+            <h2>Emergencias</h2>
             <a href='tel:123'><FontAwesomeIcon icon={faMobileRetro} />123</a>
         </div>
         <div>
             <img src={violencia3} alt=""></img>
-            <h2>Línea de la Fiscalía General</h2>
+            <h2>Fiscalía General</h2>
             <a href='tel:122'><FontAwesomeIcon icon={faMobileRetro} />122</a>
         </div>
         <div>
@@ -52,7 +52,7 @@ function Lineas(){
         </div>
         <div>
         <img src={linea3} alt=""></img>
-        <h2>Instituto Colombiano de Bienestar Familiar</h2>
+        <h2>ICBF</h2>
         <a href='tel:018000918080'><FontAwesomeIcon icon={faPhoneSquare}  />018000918080</a>
         </div>
     </div>
