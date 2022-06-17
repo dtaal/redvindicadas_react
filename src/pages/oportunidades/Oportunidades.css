@@ -84,6 +84,19 @@ html {
     font-family: 'Yeseva One', cursive;
     color: #440042;
 }
+.img-estudios p{
+      animation: typewriter 2s steps(100) 1s 1 normal both,
+                 blinkTextCursor 5000ms steps(100) infinite normal;
+    }
+    @keyframes typewriter{
+      from{width: 0;}
+      to{width: 24em;}
+    }
+    @keyframes blinkTextCursor{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
+    }
+
 
 .img-estudios img {
     display: flex;
@@ -91,12 +104,22 @@ html {
     width: 100%;
     padding: 2rem;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 7%;
+    position: relative;
+    animation: mymove 2s;
+    animation-timing-function: ease;
 }
+
+@keyframes mymove {
+    0% {left: 0px;}
+    50% {left: 50px;}
+    100% {left: 0px;}
+}
+
 
 /* HOVER ESTUDIOS */
 .hover-estudios {
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,9 +131,17 @@ html {
     background-color: #c75c7e33;
     box-shadow: 10px 15px #A12161;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 0%;
+    transition: 1ms;
 }
-
+.hover-estudios:hover {
+    transform: scale(1.2 , 1.2);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+.container {
+    padding: 15px;
+}
 .hover-estudios h2, h3 {
     padding: 15px;
 }
@@ -193,7 +224,7 @@ html {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .hover-estudios {

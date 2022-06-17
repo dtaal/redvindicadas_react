@@ -58,7 +58,7 @@ function Oportunidades(){
                 {estudio.acerca}
             </p>
             <a href={estudio.link} target='_blank' rel="noreferrer">
-                Si quieres más info da click aquí
+            Más info
             </a>
             
             </div>
@@ -108,7 +108,7 @@ function Oportunidades(){
                 {cur.acerca}
             </p>
             <a href={cur.link} target='_blank' rel="noreferrer">
-                Si quieres más info da click aquí
+            Más info
             </a>
             </div>
             </figure>

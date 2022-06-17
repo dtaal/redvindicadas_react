@@ -35,7 +35,7 @@ let cursos = [
             "img":"https://periodismopublico.com/wp-content/uploads/2019/06/Sena-.jpg",
             "inst":"SENA",
             "fecha":"Abierto",
-            "acerca":"Introducción a sistemas automatizados, actuadores, lenguajes de programación, aplicaciones de automatización",
+            "acerca":"Sistemas automatizados, actuadores, lenguajes de programación, aplicaciones de automatización",
             "link":"http://oferta.senasofiaplus.edu.co/sofia-oferta/detalle-oferta.html?fm=0&fc=Mt--G8-sGqg",
         },
         {
@@ -118,7 +118,40 @@ let colegios = [
             "sobre":"Carrera 94C Nº129A - 04, Cra. 94c #129a-4, Suba, Bogotá",
         }
 ]
-
+let violencias = [
+    {
+        "id": 1,
+        "violencia":"Violencia Económica",
+        "v1":"Tiene acceso a todas tus cuentas financieras y documentos de identidad.",
+        "v2":"Limita tu dinero y lo que puedes hacer con él.",
+        "v3":"Saca préstamos, créditos, tarjetas, etc, a tu nombre sin tu consetimiento.",
+        "v4":"Te impide trabajar y/o ganar dinero por tu cuenta",
+    },
+    {
+        "id": 2,
+        "violencia":"Violencia Psicológica",
+        "v1":"Te manipula emocionalmente",
+        "v2":"Te controla, controla tus relaciones interpersonales, tu forma de vestir, de actuar, de pensar etc.",
+        "v3":"Hace comentarios hirientes sobre ti mismx y te genera inseguridades.",
+        "v4":"Te hace sentir culpable de cosas que NO son tu culpa.",
+    },
+    {
+        "id": 3,
+        "violencia":"Violencia Física",
+        "v1":"No controla su enojo y golpea cosas a tu alrededor",
+        "v3":"Te pellizca, muerde, empuja, aprieta, etc, lastimándote.",
+        "v4":"Te agrede físicamente",
+        "v5":"Rompe tus objetos personales",
+    },
+    {
+        "id": 4,
+        "violencia":"Violencia Sexual",
+        "v1":"Te insiste en tener relaciones sexuales o cualquier otro acto sexual, aunque no quieras.",
+        "v2":"Toca tu cuerpo sin tu consentimiento.",
+        "v3":"Te obliga a tocar su cuerpo.",
+        "v4":"Te genera incomodidad y continua realizando acciones sobre ti a pesar de negarte.",
+    },
+]
 export function getAllestudios(){
     return estudios;
 }
@@ -133,4 +166,7 @@ export function getAllcolect(){
 }
 export function getAllcole(){
     return colegios;
+}
+export function getV(){
+    return violencias;
 }
