@@ -1,0 +1,137 @@
+.h1{
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--rosa-oscuro);
+    font-size: 25px;
+    padding: 3px 5px;
+    }
+.container-title{
+    margin: 20px auto -20px;
+    max-width: 250px;
+}
+.h2{
+    font-size: 22px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.contenedor-fondo{
+    margin-bottom: 25px;
+    padding:40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo-adultos{
+    background-image: url(../../pages/juega-aprende/img/adul-background.svg);
+}
+.fondo-jovenes{
+    background-image: url(../../pages/juega-aprende/img/jov-background.svg);
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card{
+    margin:5px;
+    background-color:var(--fondo);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding:10px;
+}
+.card-border{
+    margin:8px;
+    background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.card-border:hover{
+    margin:8px;
+    background: #FF7A00;
+    border-radius: 10px;
+}
+.card img{
+    padding:5px;
+}
+.img-card{
+    max-width:100px;
+    width:80%;
+}
+
+.icondescarga{
+    max-width:40px;
+    width:90%;
+}
+.icondescarga:hover{
+    animation: rotate 1s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .h1{
+        font-size: 30px;
+    }
+    .container-title{
+        max-width: 300px;
+    }
+    .h2{
+        font-size: 30px;
+    }
+    .card{
+        padding:25px 35px;
+        width: 230px;
+    }
+    .contenedor-fondo{
+        padding:150px 0;
+    }
+    .icondescarga{
+        max-width:150px;
+        width:100%;
+    }
+    .img-card{
+        width:100%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .h1{
+        font-size: 32px;
+        padding:10px ;
+    }
+    .container-title{
+        max-width: 320px;
+    }
+    .card{
+        padding:25px 60px;
+    }
+    .img-card{
+        width:100%;
+    }
+    .icondescarga{
+        width:70%;
+    }
+    .contenedor-fondo{
+        padding:170px 0;
+    }
+}
+@media screen and (min-width:1200px) {
+    
+    .icondescarga{
+        width:100%;
+    }
+}

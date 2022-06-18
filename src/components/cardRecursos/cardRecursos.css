@@ -1,0 +1,119 @@
+/*cards*/
+.container, .container2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-border-src{
+    width: 200px;
+    height: 225px;
+    padding:0.1px;
+    background: -webkit-linear-gradient(#FF7A00 0%, #F67209 0.01%, #A12161 81.35%);
+    border-radius: 10px;
+    margin: 10px ;
+}
+.card-src{
+    height: 215px;
+    margin:5px;
+    background-color:var(--fondo);
+    border-radius: 10px;
+    padding:15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.card-src h3{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.icondescarga-derecha{
+    max-width:30px;
+    width:50%;
+}
+/*titles*/
+.title-src{
+    padding:5px;
+    margin:10px 0 15px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    text-align: center;
+}
+.primary{
+    background-color: var(--morado-osc);
+}
+.secondary{
+    background-color: var(--rosa-oscuro);
+}
+p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 20px ;
+    text-align: center;
+}
+.primer-recurso p{
+    text-align: left;
+}
+.line, .line-second{
+    height: 15px;
+    margin: 15px 0 20px;
+}
+.line{
+    background-color: var(--morado-osc);
+}
+.line-second{
+    background-color: var(--rosa-oscuro);
+}
+/*info complementaria*/
+iframe{
+    width:95%; 
+    height:500px;
+    margin:10px auto 40px;
+    display: flex;
+
+}
+@media screen and (min-width:768px) {
+    .primer-recurso p {
+        padding: 15px 80px ;
+        font-size: 16px;
+    }
+    .title-src{
+        font-size: 30px;
+    }
+    .h1-barra{
+        background-color: var(--rosa-oscuro);
+        color: white;
+        border-radius: 5px;
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+    .container, .container2{
+        margin:0 auto;
+    }
+    .card-border-src{
+        margin: 10px 5px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .primer-recurso p {
+        padding: 10px 130px ;
+        font-size: 18px;
+    }
+    .container, .container2{
+        margin:0 20px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container{
+        margin:0 100px;
+    }
+}
+

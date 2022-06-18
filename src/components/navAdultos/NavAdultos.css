@@ -1,0 +1,87 @@
+.container-titlebar{
+    margin: 15px auto;
+    max-width: 350px;
+    width:80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+}
+.h1-barra{
+    background-color: var(--rosa-oscuro);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
+.barnav-recursosyjuegos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.barnav-interna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding:0 10px;
+    /*border: 2px solid;*/
+}
+.img-menu{
+    max-height: 100px;
+    height: 60%;
+    padding-bottom: 5px;
+}
+.imglinea-nav{
+    margin: 0 10px;
+    height:70px;
+}
+.button-adult, .desactive:hover{
+    background: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+.button-adult:hover, .desactive{
+    color: var(--rosa-oscuro);
+    border: 2px solid var(--rosa-oscuro);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;    
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+@media screen and (min-width:768px) {
+    .container-titlebar{
+        max-width: 420px;
+        margin-bottom: 30px;
+    }
+    .h1-barra{
+        font-size: 20px;
+        padding: 7px;
+    }
+    .img-menu{
+        height: 80%;
+        padding-bottom: 5px;
+    }
+    .button-adult, .desactive:hover{
+        font-size: 20px;
+    }
+    .button-adult:hover, .desactive{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .button-adult{
+        height: 80%;
+    }
+    .h1-barra{
+        font-size: 22px;
+    }
+}
