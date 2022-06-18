@@ -15,6 +15,7 @@ import Jovenes2 from './pages/juegayaprende/jovenes/jovenes2/Jovenes2';
 import Jovenes3 from './pages/juegayaprende/jovenes/jovenes3/Jovenes3';
 import JovenesJuegos from './pages/juegayaprende/jovenes/jovenes_juegos/JovenesJuegos';
 import Form from './pages/formulario/form';
+import Asociados1 from './pages/redes/asociados/Asociados1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
       <Route path='/redv-pers/kit-fem' element={<Kitfem/>}></Route>
       <Route path='/redv-pers/oportunidades' element={<Oportunidades/>}></Route>
       <Route path='/redv-pers/asociados' element={<Asociados/>}></Route>
+      <Route path='/redv-pers/asociados/1' element={<Asociados1/>}></Route>
       <Route path='/redv-pers/lineas' element={<Lineas/>}></Route>
       <Route path='*' element={<Error404/>}></Route>
       <Route path='/redv-pers/home' element={<Navigate replace to={'/'}/>}></Route>
